@@ -23,7 +23,7 @@ public:
 };
 
 // Global task instance
-LEDBlinkTask ledBlink(LED_BUILTIN, 1000); // Blink every 1 second
+LEDBlinkTask ledBlink(13, 1000); // Blink every 1 second
 
 void setup() {
     // Initialize the LED blink task

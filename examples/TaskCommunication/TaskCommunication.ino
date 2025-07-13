@@ -12,7 +12,7 @@ class ButtonReaderTask final : public PeriodicTask {
         bool currentButtonState = digitalRead(this->buttonPin);
 
         // Send button state to queue (inverted because of pull-up)
-        buttonStateQueue.send(currentButtonState);
+        buttonStateQueue.send(!currentButtonState);
     }
 
 public:
@@ -49,7 +49,7 @@ public:
 
 // Global task instances
 ButtonReaderTask buttonReader(2, 100);  // Read button every 100ms
-LEDControllerTask ledController(LED_BUILTIN, 100);    // Process queue every 100ms
+LEDControllerTask ledController(13, 100);    // Process queue every 100ms
 
 void setup() {
     // Initialize both tasks

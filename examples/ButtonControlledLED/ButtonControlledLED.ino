@@ -24,7 +24,7 @@ public:
 };
 
 // Global instances
-LEDTimerTask ledTimer(LED_BUILTIN, 10000); // 10 second timer
+LEDTimerTask ledTimer(13, 10000); // 10 second timer
 bool lastButtonState = HIGH;
 bool buttonState = HIGH;
 
