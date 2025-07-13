@@ -1,0 +1,24 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## Task v1.0.0 - 2025-07-13
+
+### Added
+- Initial release of Task library for Arduino
+- `TaskInterface` base class with state management system
+- `PeriodicTask` class for executing tasks at regular intervals
+- `DelayedTask` class for one-time execution for specified time interval
+- `MessageInterface` template for message handling
+- `MessageQueue` template implementation for buffered message passing
+- Task state management with RUNNING, READY, WAITING, and PAUSE states
+- Counter overflow detection for long-running tasks
+- Template-based design for flexibility and type safety
+- Non-blocking task execution system
+- Support for nested task management
+
+### Features
+- Precise timing control without blocking main program flow
+- Template-based message queue
+- Automatic state transitions for task lifecycle management
+- Memory-efficient implementation suitable for small microcontrollers

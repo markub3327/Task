@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map For Task
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TaskInterface	KEYWORD1
+PeriodicTask	KEYWORD1
+DelayedTask	KEYWORD1
+MessageInterface	KEYWORD1
+MessageQueue	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+run	KEYWORD2
+update	KEYWORD2
+start	KEYWORD2
+setState	KEYWORD2
+getState	KEYWORD2
+send	KEYWORD2
+read	KEYWORD2
+isFull	KEYWORD2
+isEmpty	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+RUNNING	LITERAL1
+READY	LITERAL1
+WAITING	LITERAL1
+PAUSE	LITERAL1
+
+MESSAGE_CAPACITY	LITERAL1
